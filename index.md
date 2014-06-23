@@ -39,12 +39,12 @@ ggplot(data=iris,aes(Sepal.Length,Sepal.Width,color=Species))+geom_point()+facet
 
 ## Slide4: Some Plots in Shiny App
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
+![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2.png) 
 
 ---
 
 ## Slide5: Links
 
-1. Github link for code
-2. Shiny App for viewing the demo
+1. Github link for code : https://github.com/kaushik912/shinycodes
+2. Shiny App for viewing the demo: https://kaushik912.shinyapps.io/myapp2/
 

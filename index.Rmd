@@ -51,6 +51,6 @@ grid.arrange(plot1, plot2, ncol=2)
 
 ## Slide5: Links
 
-1. Github link for code
-2. Shiny App for viewing the demo
+1. Github link for code : https://github.com/kaushik912/shinycodes
+2. Shiny App for viewing the demo: https://kaushik912.shinyapps.io/myapp2/
 
