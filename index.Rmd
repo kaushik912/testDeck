@@ -1,7 +1,7 @@
 ---
-title       : Test deck
-subtitle    : 
-author      : 
+title       : IRIS Explorer Shiny App
+subtitle    : Coursera
+author      : kaushik912
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
@@ -10,17 +10,47 @@ widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 ---
 
-## Read-And-Delete
+## Slide1: Why IRIS Explore Shiny App?
 
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
+1. Visualize the iris dataset.
+2. Look for any interesting patterns
 
---- .class #id 
+---
 
-## Slide 2
+## Slide2: Why IRIS Explore Shiny App (Contd.)?
 
-```{r, fig.height=5, fig.width=5}
-plot(1 : 10, 1 : 10)
+1. Explore relationships between variables.
+2. Graphically visualize them
+3. Add jitters, smoothers to these plots
+4. Learn Shiny through this project
+
+
+---
+
+## Slide3: Example Code
+
+```{r eval=FALSE}
+library(ggplot2)
+ggplot(data=iris,aes(Sepal.Length,Sepal.Width,color=Species))+geom_point()+facet_grid(.~Species)
+
 ```
+
+---
+
+## Slide4: Some Plots in Shiny App
+
+```{r warning=FALSE,fig.height=7,fig.width=10,echo=FALSE,message=FALSE}
+library(ggplot2)
+require(gridExtra)
+plot1 <- ggplot(data=iris,aes(Sepal.Length,Sepal.Width,color=Species))+geom_point()+facet_grid(.~Species)
+plot2 <- ggplot(data=iris,aes(Sepal.Length,Sepal.Width,color=Species))+geom_point()+geom_smooth()
+grid.arrange(plot1, plot2, ncol=2)
+```
+
+---
+
+## Slide5: Links
+
+1. Github link for code
+2. Shiny App for viewing the demo
 

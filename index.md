@@ -1,7 +1,7 @@
 ---
-title       : Test deck
-subtitle    : 
-author      : 
+title       : IRIS Explorer Shiny App
+subtitle    : Coursera
+author      : kaushik912
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
@@ -10,21 +10,41 @@ widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 ---
 
-## Read-And-Delete
+## Slide1: Why IRIS Explore Shiny App?
 
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
+1. Visualize the iris dataset.
+2. Look for any interesting patterns
 
---- .class #id 
+---
 
-## Slide 2
+## Slide2: Why IRIS Explore Shiny App (Contd.)?
+
+1. Explore relationships between variables.
+2. Graphically visualize them
+3. Add jitters, smoothers to these plots
+4. Learn Shiny through this project
+
+
+---
+
+## Slide3: Example Code
 
 
 ```r
-plot(1:10, 1:10)
+library(ggplot2)
+ggplot(data=iris,aes(Sepal.Length,Sepal.Width,color=Species))+geom_point()+facet_grid(.~Species)
 ```
 
-![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1.png) 
+---
 
+## Slide4: Some Plots in Shiny App
+
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
+
+---
+
+## Slide5: Links
+
+1. Github link for code
+2. Shiny App for viewing the demo
 
